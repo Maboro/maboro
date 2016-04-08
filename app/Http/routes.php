@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('inspire', function () {
     return view('welcome');
 });
+
+Route::get('/', 'MyController@index');
